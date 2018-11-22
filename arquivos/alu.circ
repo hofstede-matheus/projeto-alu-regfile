@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="2.13.20.5" version="1.0">
-This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
-<lib desc="#Wiring" name="0">
+<project source="2.14.6" version="1.0">
+  This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
+
+  <lib desc="#Wiring" name="0">
     <tool name="Splitter">
       <a name="facing" val="west"/>
       <a name="incoming" val="32"/>
@@ -179,26 +180,49 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
       <circ-port height="10" pin="870,290" width="10" x="125" y="85"/>
       <circ-anchor facing="east" height="6" width="6" x="97" y="77"/>
     </appear>
+    <wire from="(360,320)" to="(420,320)"/>
+    <wire from="(140,290)" to="(140,300)"/>
+    <wire from="(260,180)" to="(260,320)"/>
+    <wire from="(210,280)" to="(210,800)"/>
+    <wire from="(420,270)" to="(420,280)"/>
+    <wire from="(350,330)" to="(350,340)"/>
+    <wire from="(420,320)" to="(420,340)"/>
+    <wire from="(140,230)" to="(140,250)"/>
+    <wire from="(850,160)" to="(850,180)"/>
+    <wire from="(420,290)" to="(420,320)"/>
+    <wire from="(490,280)" to="(720,280)"/>
+    <wire from="(520,330)" to="(690,330)"/>
     <wire from="(850,200)" to="(870,200)"/>
     <wire from="(850,140)" to="(870,140)"/>
     <wire from="(850,290)" to="(870,290)"/>
+    <wire from="(420,290)" to="(450,290)"/>
+    <wire from="(260,320)" to="(260,800)"/>
+    <wire from="(420,340)" to="(450,340)"/>
     <wire from="(850,310)" to="(850,350)"/>
-    <wire from="(140,290)" to="(140,300)"/>
+    <wire from="(210,180)" to="(210,280)"/>
+    <wire from="(690,510)" to="(720,510)"/>
     <wire from="(140,60)" to="(140,100)"/>
+    <wire from="(430,270)" to="(450,270)"/>
+    <wire from="(430,320)" to="(450,320)"/>
     <wire from="(120,270)" to="(140,270)"/>
     <wire from="(120,120)" to="(140,120)"/>
     <wire from="(1050,60)" to="(1050,350)"/>
     <wire from="(120,210)" to="(140,210)"/>
+    <wire from="(210,280)" to="(420,280)"/>
+    <wire from="(720,280)" to="(720,510)"/>
     <wire from="(140,140)" to="(140,190)"/>
     <wire from="(10,60)" to="(10,300)"/>
     <wire from="(850,60)" to="(850,120)"/>
+    <wire from="(420,270)" to="(430,270)"/>
+    <wire from="(720,510)" to="(790,510)"/>
     <wire from="(850,60)" to="(1050,60)"/>
+    <wire from="(430,270)" to="(430,320)"/>
     <wire from="(850,350)" to="(1050,350)"/>
-    <wire from="(140,230)" to="(140,250)"/>
-    <wire from="(850,160)" to="(850,180)"/>
     <wire from="(850,220)" to="(850,270)"/>
     <wire from="(10,60)" to="(140,60)"/>
     <wire from="(10,300)" to="(140,300)"/>
+    <wire from="(690,330)" to="(690,510)"/>
+    <wire from="(260,320)" to="(330,320)"/>
     <comp lib="0" loc="(850,140)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="equal"/>
@@ -265,6 +289,53 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
     <comp lib="0" loc="(120,270)" name="Pin">
       <a name="width" val="3"/>
       <a name="label" val="Switch"/>
+    </comp>
+    <comp lib="0" loc="(260,180)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="16"/>
+      <a name="label" val="Y"/>
+    </comp>
+    <comp lib="0" loc="(210,180)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="16"/>
+      <a name="label" val="X"/>
+    </comp>
+    <comp lib="0" loc="(790,510)" name="Tunnel">
+      <a name="width" val="16"/>
+      <a name="label" val="result"/>
+    </comp>
+    <comp lib="3" loc="(490,380)" name="Adder"/>
+    <comp lib="3" loc="(490,630)" name="Comparator">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="3" loc="(490,680)" name="Multiplier">
+      <a name="width" val="1"/>
+    </comp>
+    <comp lib="1" loc="(500,440)" name="AND Gate">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="3" loc="(490,330)" name="Shifter">
+      <a name="width" val="16"/>
+      <a name="shift" val="lr"/>
+    </comp>
+    <comp lib="1" loc="(500,510)" name="OR Gate"/>
+    <comp lib="1" loc="(510,570)" name="XOR Gate"/>
+    <comp lib="3" loc="(490,280)" name="Shifter">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="2" loc="(360,320)" name="BitSelector">
+      <a name="width" val="16"/>
+      <a name="group" val="4"/>
+    </comp>
+    <comp lib="0" loc="(660,180)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="3"/>
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="0" loc="(350,340)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x0"/>
     </comp>
   </circuit>
 </project>
